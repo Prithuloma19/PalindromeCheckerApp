@@ -1,7 +1,7 @@
-p// Class – Container for the Palindrome Checker application logic
+// Class – Container for the Palindrome Checker application logic
 public class PalindromeCheckerApp {
 
-    // Application constants (App details)
+    // Application constants (App details)git
     static final String APP_NAME = "Palindrome Checker";
     static final String APP_VERSION = "Version 1.0";
 
