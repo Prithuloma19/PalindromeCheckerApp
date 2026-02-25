@@ -1,26 +1,18 @@
-// Class – Container for the Palindrome Checker application logic
-public class PalindromeCheckerApp {
+class PalindromeCheckerApp {
+    static void main() {
+        String str = "madam";
+        boolean isPalindrome = true;
+        for (int i = 0; i < str.length() / 2; i++){
+            if(str.charAt(i) !=str.charAt(str.length()-1-i)){
+                isPalindrome=false;
+                break;
 
-    // Application constants (App details)git
-    static final String APP_NAME = "Palindrome Checker";
-    static final String APP_VERSION = "Version 1.0";
-
-    // Main Method – Entry point of the Java application
-    public static void main(String[] args) {
-
-        // Console Output – Display welcome message and app details
-        System.out.println("=================================");
-        System.out.println("Welcome to " + APP_NAME);
-        System.out.println(APP_VERSION);
-        System.out.println("=================================");
-
-        // Application Flow Control – Continue to next use case or exit
-        System.out.println("Application is ready to check palindromes...");
-
-        // You can call next use case method here
-        // startPalindromeProcessing();
-
-        // For now, program ends here
-        System.out.println("Program started successfully.");
+            }
+        }
+        if ( isPalindrome){
+            System.out.println(str + " is Palindrome");
+        } else {
+            System.out.println(str + " is not a palindrome");
+        }
     }
 }
